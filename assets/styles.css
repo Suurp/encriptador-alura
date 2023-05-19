@@ -1,0 +1,262 @@
+* {
+    font-family: 'Inter', sans-serif;
+}
+
+:root {
+    --back: #F3F5FC;
+    --blue: #0A3871;
+    --font-size: 1.5rem;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background: var(--back);
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+header {
+    background-color: #fff;
+    box-shadow: 15px 9px 25px 0 rgba(0,0,0,0.1);
+    height: 75px;
+    left: 250px;
+    right: 0;
+}
+
+nav {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    line-height: 70px;
+    
+}
+
+.logo {
+    text-align: center;
+    height: 30px;
+    line-height: 70px;
+    vertical-align: middle;
+    border-style: none;
+}
+
+.logo-name {
+    vertical-align: middle;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 700;
+    color: #000;
+    letter-spacing: 3px;
+    vertical-align: bottom;
+}
+
+main {
+    width: 85%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 2.5fr 1fr;
+    min-height: 80%;
+    align-items: top;
+    padding: 20px 0 20px 0;
+}
+
+.left {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.text-area{
+    width: 90%;
+    font-size: var(--font-size);
+    color: var(--blue);
+    border: none;
+    height: 100%;
+    border-radius: 15px;
+    resize: none;
+    background: #fff;
+    box-shadow:  20px 20px 20px rgba(0,0,0,0.2);
+    outline: none;
+    padding: 20px;
+}
+
+::placeholder{
+    color: var(--blue);
+}
+
+.aviso {
+    font-size: 16px;
+}
+
+.aviso i{
+    font-size: 16px;
+    padding-right: 10px;
+}
+
+
+.botones{
+    display: flex;
+    gap: 24px;
+    margin-top: 16px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.btn-encriptar, .btn-desencriptar, .copiar{
+    border: 1px solid var(--blue);
+    cursor: pointer;
+    max-width: 100%;
+    height: 67px;
+    width: 40%;
+    border-radius: 24px;
+    font-size: 16px;
+}
+
+.btn-encriptar {
+    background-color: var(--blue);
+    color: #fff;
+}
+
+.btn-desencriptar {
+    border-radius: 24px;
+    background-color: #d8dfe8;
+    color: var(--blue);
+}
+
+.right {
+    background-color: #fff;
+    height: 100%;
+    border-radius: 32px;
+    border-color: #000;
+    box-shadow:  20px 20px 20px rgba(0,0,0,0.3);
+    box-sizing: border-box;
+    display: flex;
+    padding: 20px 20px 6px 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.right.respuesta {
+    justify-content: space-between;
+}
+
+.muneco{
+    width: 100%;
+}
+
+.copiar {
+    width: 100%;
+    background: transparent;
+    color: var(--blue);
+    display: none;
+}
+
+.msg1{
+    font-size: 24px;
+    font-weight: 700;
+    color: #343a40;
+    resize: none;
+    text-align: center;
+    border: none;
+    outline: none;
+    background-color: #fff;
+}
+
+.msg1::placeholder {
+    font-weight: 700;
+    text-align: center;
+}
+
+.msg1.respuesta{
+    text-align: left;
+    font-weight: 400;
+    height: 15%;
+    width: 100%;
+}
+
+.msg2{
+    height: 20%;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    color: #495057;
+}
+
+footer {
+    height: 75px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 15px 9px 25px 20px rgba(0,0,0,0.1);
+    left: 250px;
+    right: 0;
+}
+
+footer span {
+    text-align: center;
+    height: 30px;
+    line-height: 70px;
+    vertical-align: middle;
+}
+
+@media screen and (max-width: 800px) {
+    
+    main{
+        grid-template-columns: 1fr;
+        grid-template-rows: 75% auto;
+        width: auto;
+        margin: auto 20px;
+    }
+
+    .text-area {
+        width: auto;
+    }
+
+
+    .botones {
+        justify-content: center;
+        margin: 20px;
+
+    }
+
+    .right{
+        height: 100%;
+    }
+
+    .msg1.respuesta {
+        height: 80%;
+    }
+    
+
+    .muneco {
+        display: none;
+    }
+
+    .btn-encriptar, .btn-desencriptar {
+        width: 45%;
+
+    }
+
+    footer {
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    .main {
+        width: 100%;
+    }
+
+    
+
+    .btn-encriptar, .btn-desencriptar {
+        width: 100%;
+        max-width: 100%;
+    }
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="assets/styles.css" />
+    <link rel="stylesheet" href="assets/toast/toast.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/e5b61b3926.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <img class="logo" src="assets/imagenes/Logo.png" alt="logo de alura" />
+        <span class="logo-name">Encriptador de texto</span>
+      </nav>
+    </header>
+
+    <main>
+      <section class="left">
+        <textarea
+          class="text-area"
+          placeholder="Ingrese el texto aqui"
+         ></textarea>
+        <div class="left-f">
+          <h6 class="aviso">
+            <i class="fas fa-circle-info"></i>Solo letras minúsculas y sin
+            acentos
+          </h6>
+          <div class="botones">
+            <button class="btn-encriptar">Encriptar</button>
+            <button class="btn-desencriptar">Desencriptar</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="right respuesta">
+        <img class="muneco" src="assets/imagenes/Muneco.png" alt="muneco-alura" />
+        <textarea
+          id="mensajeFinal"
+          class="msg1 respuesta"
+          placeholder="Ningún mensaje fue encontrado"
+          cols="20"
+          disabled></textarea>
+        <p class="msg2">
+          Ingresa el texto que desees encriptar o desencriptar.
+        </p>
+        <button class="copiar hidden">Copiar</button>
+      </section>
+    </main>
+
+   <footer>
+      <span>&#169; Creado por n5dev - 2023</span>
+   </footer>
+
+    <script src="assets/script.js"></script>
+    <script src="assets/toast/toast.js"></script>
+  </body>
+  
+</html>
