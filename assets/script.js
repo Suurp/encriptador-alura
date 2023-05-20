@@ -71,7 +71,7 @@ function validarCampo() {
     var regex = /^[a-z\s]+$/;
     if (!regex.test(textArea.value)) {
         new Toast({
-            message: 'Solo se aceptan letras en minuscula y sin acento',
+            message: 'Solo se aceptan letras en minúscula y sin acento',
             type: 'danger'
           });
       textArea.focus();
